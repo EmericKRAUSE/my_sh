@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-sleep 1
+sleep 0.5
 
 echo "
 
@@ -21,12 +21,20 @@ echo "
 sleep 0.5
 
 echo ""
-echo "Welcome $USER"
+echo "Username: $USER"
 
 sleep 0.5
 
 echo ""
 echo "You are connected to: $HOSTNAME"
-echo ""
 
-touch test.txt
+sleep 0.5
+
+echo ""
+echo "Day: $(date +'%A')"
+
+sleep 0.5
+
+echo ""
+echo "Time : $(date +'%T')"
+echo ""
