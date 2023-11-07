@@ -3,7 +3,6 @@
 sleep 0.5
 
 echo "
-
                    ___       //      ___        ___        _   __        ___
   //  / /  / /   //___) )   //     //   ) )   //   ) )   // ) )  ) )   //___) )
  //  / /  / /   //         //     //         //   / /   // / /  / /   //
@@ -21,20 +20,22 @@ echo "
 sleep 0.5
 
 echo ""
-echo "Username: $USER"
+echo ""
+echo -e "\t\t| Username: $USER |"
 
 sleep 0.5
 
 echo ""
-echo "You are connected to: $HOSTNAME"
+echo -e "\t\t| You are connected to: $HOSTNAME |"
 
 sleep 0.5
 
 echo ""
-echo "Day: $(date +'%A')"
+echo -e "\t\t| Day: $(date +'%A') |"
 
 sleep 0.5
 
 echo ""
-echo "Time : $(date +'%T')"
+echo -e "\t\t| Time : $(date +'%T') |"
+echo ""
 echo ""
