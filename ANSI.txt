@@ -1,0 +1,46 @@
+\e[30m : Noir
+\e[31m : Rouge
+\e[32m : Vert
+\e[33m : Jaune
+\e[34m : Bleu
+\e[35m : Magenta (violet)
+\e[36m : Cyan (bleu-vert)
+\e[37m : Blanc (gris clair)
+
+Texte en couleur claire (généralement plus clair que les couleurs normales):
+
+\e[90m : Gris foncé
+\e[91m : Rouge clair
+\e[92m : Vert clair
+\e[93m : Jaune clair
+\e[94m : Bleu clair
+\e[95m : Magenta clair
+\e[96m : Cyan clair
+\e[97m : Blanc clair
+
+Réinitialisation des couleurs:
+
+\e[0m : Réinitialise toutes les propriétés de mise en forme, y compris la couleur, au paramètre par défaut du terminal.
+Styles de texte:
+
+\e[1m : Texte en gras (bold)
+\e[3m : Texte en italique (pas pris en charge par tous les terminaux)
+\e[4m : Texte souligné
+\e[5m : Texte clignotant (pulsé)
+\e[7m : Texte inversé (inversion des couleurs du texte et de l'arrière-plan)
+\e[9m : Texte barré (barré)
+
+|*****************************************************|
+| pour script shell                                   |
+|                                                     |
+*******************************************************
+
+noir="\e[30m"
+rouge="\e[31m"
+vert="\e[32m"
+jaune="\e[33m"
+bleu="\e[34m"
+magenta="\e[35m"
+cyan="\e[36m"
+blanc="\e[37m"
+reset="\e[0m"

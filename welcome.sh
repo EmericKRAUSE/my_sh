@@ -1,42 +1,46 @@
 #!/usr/bin/bash
 
-sleep 1
+noir="\e[30m"
+rouge="\e[31m"
+vert="\e[32m"
+jaune="\e[33m"
+bleu="\e[34m"
+magenta="\e[35m"
+cyan="\e[36m"
+blanc="\e[37m"
+reset="\e[0m"
+gras="\e[1m"
+souligne="\e[4m"
 
-echo ""
+sleep 0.6
+
+echo -e "\n\n"
 echo -e "
-\t\t                   ___       //      ___        ___        _   __        ___
-\t\t  //  / /  / /   //___) )   //     //   ) )   //   ) )   // ) )  ) )   //___) )
-\t\t //  / /  / /   //         //     //         //   / /   // / /  / /   //
-\t\t((__( (__/ /   ((____     //     ((____     ((___/ /   // / /  / /   ((____
-"
+\t\t$cyan                   ___       //      ___        ___        _   __        ___
+\t\t$magenta  //  / /  / /   //___) )   //     //   ) )   //   ) )   // ) )  ) )   //___) )
+\t\t$rouge //  / /  / /   //         //     //         //   / /   // / /  / /   //
+\t\t$jaune((__( (__/ /   ((____     //     ((____     ((___/ /   // / /  / /   ((____$reset"
 
 echo -e "
-\t\t
-\t\t    ___       / ___      __        ___                   ___        ___
-\t\t  //___) )   //\ \     //  ) )   //   ) )   //   / /   ((   ) )   //___) )
-\t\t //         //  \ \   //        //   / /   //   / /     \ \      //
-\t\t((____     //    \ \ //        ((___( (   ((___( (   //   ) )   ((____
-"
-echo ""
+\t\t$jaune    ___       / ___      __        ___                   ___        ___
+\t\t$rouge  //___) )   //\ \     //  ) )   //   ) )   //   / /   ((   ) )   //___) )
+\t\t$magenta //         //  \ \   //        //   / /   //   / /     \ \      //
+\t\t$cyan((____     //    \ \ //        ((___( (   ((___( (   //   ) )   ((____$reset\n\n\n\n"
 
-sleep 0.5
+sleep 0.4
 
-echo ""
-echo -e "\t\t| Username: $USER |"
+echo -e "\t\t$cyan|$reset Username: $gras $USER $bleu|\n"
 
-sleep 0.5
+sleep 0.4
 
-echo ""
-echo -e "\t\t| You are connected to: $HOSTNAME |"
+echo -e "\t\t$magenta|$reset Machine: $gras $HOSTNAME $magenta|\n"
 
-sleep 0.5
+sleep 0.4
 
-echo ""
-echo -e "\t\t| Day: $(date +'%A') |"
+echo -e "\t\t$rouge|$reset Day: $gras $(date +'%A') $rouge|\n"
 
-sleep 0.5
+sleep 0.4
 
-echo ""
-echo -e "\t\t| Time : $(date +'%T') |"
-echo ""
-echo ""
+echo -e "\t\t$jaune|$reset Time: $gras $(date +'%T') $jaune|\n\n\n\n"
+
+sleep 0.4
